@@ -17,6 +17,9 @@
 		04A9A0712549F81C00412D6D /* CeibaiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A0702549F81C00412D6D /* CeibaiOSUITests.swift */; };
 		04A9A084254A167900412D6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A083254A167900412D6D /* Constants.swift */; };
 		04A9A087254A18B300412D6D /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A086254A18B300412D6D /* EndPoints.swift */; };
+		09D7EC0700EF470069A2A9D7 /* Pods_CeibaiOS_CeibaiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3B57AF6365BD3745FB739 /* Pods_CeibaiOS_CeibaiOSUITests.framework */; };
+		3A08AA289D0924D3957B2B4C /* Pods_CeibaiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741E7EB17FBC50BDB8248509 /* Pods_CeibaiOSTests.framework */; };
+		A4601CAA23822A9790B5E7F5 /* Pods_CeibaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6677E67C44C42759D92822D2 /* Pods_CeibaiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A2560DCA9754218461C5A3 /* Pods-CeibaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaiOS.debug.xcconfig"; path = "Target Support Files/Pods-CeibaiOS/Pods-CeibaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		04A9A04B2549F81800412D6D /* CeibaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9A04E2549F81800412D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A9A0502549F81800412D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 		04A9A0722549F81C00412D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A9A083254A167900412D6D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04A9A086254A18B300412D6D /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		060D9634E24D3D5D263E063E /* Pods-CeibaiOS-CeibaiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaiOS-CeibaiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-CeibaiOS-CeibaiOSUITests/Pods-CeibaiOS-CeibaiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		06D2AFDF1715BAC941CDB257 /* Pods-CeibaiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaiOSTests.release.xcconfig"; path = "Target Support Files/Pods-CeibaiOSTests/Pods-CeibaiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D27873C25AFACE9B2F487A4 /* Pods-CeibaiOS-CeibaiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaiOS-CeibaiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaiOS-CeibaiOSUITests/Pods-CeibaiOS-CeibaiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6677E67C44C42759D92822D2 /* Pods_CeibaiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		741E7EB17FBC50BDB8248509 /* Pods_CeibaiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F3B57AF6365BD3745FB739 /* Pods_CeibaiOS_CeibaiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaiOS_CeibaiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9BDB5F2EDC4E0C86A1A9FE /* Pods-CeibaiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaiOS.release.xcconfig"; path = "Target Support Files/Pods-CeibaiOS/Pods-CeibaiOS.release.xcconfig"; sourceTree = "<group>"; };
+		A8E5355CAD4AD4A7B4C08FD2 /* Pods-CeibaiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaiOSTests/Pods-CeibaiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4601CAA23822A9790B5E7F5 /* Pods_CeibaiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A08AA289D0924D3957B2B4C /* Pods_CeibaiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D7EC0700EF470069A2A9D7 /* Pods_CeibaiOS_CeibaiOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,8 @@
 				04A9A0642549F81C00412D6D /* CeibaiOSTests */,
 				04A9A06F2549F81C00412D6D /* CeibaiOSUITests */,
 				04A9A04C2549F81800412D6D /* Products */,
+				B22385A0384464306A37B18B /* Pods */,
+				3B5098A92CEB4412B38418E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +199,30 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		3B5098A92CEB4412B38418E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6677E67C44C42759D92822D2 /* Pods_CeibaiOS.framework */,
+				79F3B57AF6365BD3745FB739 /* Pods_CeibaiOS_CeibaiOSUITests.framework */,
+				741E7EB17FBC50BDB8248509 /* Pods_CeibaiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B22385A0384464306A37B18B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03A2560DCA9754218461C5A3 /* Pods-CeibaiOS.debug.xcconfig */,
+				9B9BDB5F2EDC4E0C86A1A9FE /* Pods-CeibaiOS.release.xcconfig */,
+				3D27873C25AFACE9B2F487A4 /* Pods-CeibaiOS-CeibaiOSUITests.debug.xcconfig */,
+				060D9634E24D3D5D263E063E /* Pods-CeibaiOS-CeibaiOSUITests.release.xcconfig */,
+				A8E5355CAD4AD4A7B4C08FD2 /* Pods-CeibaiOSTests.debug.xcconfig */,
+				06D2AFDF1715BAC941CDB257 /* Pods-CeibaiOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9A0752549F81C00412D6D /* Build configuration list for PBXNativeTarget "CeibaiOS" */;
 			buildPhases = (
+				847B803138C7D4C149A2A8A6 /* [CP] Check Pods Manifest.lock */,
 				04A9A0472549F81800412D6D /* Sources */,
 				04A9A0482549F81800412D6D /* Frameworks */,
 				04A9A0492549F81800412D6D /* Resources */,
+				1704A72781ADB94577D85C23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9A0782549F81C00412D6D /* Build configuration list for PBXNativeTarget "CeibaiOSTests" */;
 			buildPhases = (
+				2992866CCCE82F8C94983052 /* [CP] Check Pods Manifest.lock */,
 				04A9A05D2549F81C00412D6D /* Sources */,
 				04A9A05E2549F81C00412D6D /* Frameworks */,
 				04A9A05F2549F81C00412D6D /* Resources */,
@@ -224,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A9A07B2549F81C00412D6D /* Build configuration list for PBXNativeTarget "CeibaiOSUITests" */;
 			buildPhases = (
+				808377A7C3D1D173EBE5B41C /* [CP] Check Pods Manifest.lock */,
 				04A9A0682549F81C00412D6D /* Sources */,
 				04A9A0692549F81C00412D6D /* Frameworks */,
 				04A9A06A2549F81C00412D6D /* Resources */,
+				D76AB88539338EC63BB2C21C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +353,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1704A72781ADB94577D85C23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaiOS/Pods-CeibaiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaiOS/Pods-CeibaiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CeibaiOS/Pods-CeibaiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2992866CCCE82F8C94983052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808377A7C3D1D173EBE5B41C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaiOS-CeibaiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847B803138C7D4C149A2A8A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D76AB88539338EC63BB2C21C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaiOS-CeibaiOSUITests/Pods-CeibaiOS-CeibaiOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaiOS-CeibaiOSUITests/Pods-CeibaiOS-CeibaiOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CeibaiOS-CeibaiOSUITests/Pods-CeibaiOS-CeibaiOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04A9A0472549F81800412D6D /* Sources */ = {
@@ -488,6 +637,7 @@
 		};
 		04A9A0762549F81C00412D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A2560DCA9754218461C5A3 /* Pods-CeibaiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +657,7 @@
 		};
 		04A9A0772549F81C00412D6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9BDB5F2EDC4E0C86A1A9FE /* Pods-CeibaiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +677,7 @@
 		};
 		04A9A0792549F81C00412D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E5355CAD4AD4A7B4C08FD2 /* Pods-CeibaiOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +700,7 @@
 		};
 		04A9A07A2549F81C00412D6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D2AFDF1715BAC941CDB257 /* Pods-CeibaiOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +723,7 @@
 		};
 		04A9A07C2549F81C00412D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D27873C25AFACE9B2F487A4 /* Pods-CeibaiOS-CeibaiOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +744,7 @@
 		};
 		04A9A07D2549F81C00412D6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060D9634E24D3D5D263E063E /* Pods-CeibaiOS-CeibaiOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
