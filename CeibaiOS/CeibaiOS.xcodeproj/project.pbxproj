@@ -15,6 +15,8 @@
 		04A9A05B2549F81C00412D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9A0592549F81C00412D6D /* LaunchScreen.storyboard */; };
 		04A9A0662549F81C00412D6D /* CeibaiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A0652549F81C00412D6D /* CeibaiOSTests.swift */; };
 		04A9A0712549F81C00412D6D /* CeibaiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A0702549F81C00412D6D /* CeibaiOSUITests.swift */; };
+		04A9A084254A167900412D6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A083254A167900412D6D /* Constants.swift */; };
+		04A9A087254A18B300412D6D /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A086254A18B300412D6D /* EndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		04A9A06C2549F81C00412D6D /* CeibaiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9A0702549F81C00412D6D /* CeibaiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaiOSUITests.swift; sourceTree = "<group>"; };
 		04A9A0722549F81C00412D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A9A083254A167900412D6D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04A9A086254A18B300412D6D /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				04A9A0502549F81800412D6D /* SceneDelegate.swift */,
 				04A9A0822549FB1B00412D6D /* Supporting Files */,
 				04A9A0812549FA6600412D6D /* Common */,
+				04A9A085254A186200412D6D /* Service */,
 				04A9A07E2549F9F400412D6D /* Model */,
 				04A9A07F2549FA2E00412D6D /* View */,
 				04A9A0802549FA4400412D6D /* Controller */,
@@ -155,6 +160,7 @@
 		04A9A0812549FA6600412D6D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				04A9A083254A167900412D6D /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,6 +172,14 @@
 				04A9A0572549F81C00412D6D /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04A9A085254A186200412D6D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04A9A086254A18B300412D6D /* EndPoints.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A9A0532549F81800412D6D /* ViewController.swift in Sources */,
+				04A9A087254A18B300412D6D /* EndPoints.swift in Sources */,
 				04A9A04F2549F81800412D6D /* AppDelegate.swift in Sources */,
 				04A9A0512549F81800412D6D /* SceneDelegate.swift in Sources */,
+				04A9A084254A167900412D6D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
