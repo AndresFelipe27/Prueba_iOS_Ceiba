@@ -16,7 +16,6 @@ protocol UserManagerDelegate {
 struct UserManager {
     
     var delegate: UserManagerDelegate?
-    
     let baseService = BaseService()
     
     func getUsersFromApi() {

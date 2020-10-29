@@ -16,7 +16,6 @@ protocol PostManagerDelegate {
 struct PostManager {
     
     var delegate: PostManagerDelegate?
-    
     let baseService = BaseService()
     
     func getPostByUserIdFromApi(userId: Int) {
