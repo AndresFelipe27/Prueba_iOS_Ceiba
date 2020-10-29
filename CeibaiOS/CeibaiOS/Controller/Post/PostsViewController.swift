@@ -10,10 +10,13 @@ import UIKit
 
 class PostsViewController: UIViewController {
 
+    var user: User?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(self.user?.name)
     }
     
 

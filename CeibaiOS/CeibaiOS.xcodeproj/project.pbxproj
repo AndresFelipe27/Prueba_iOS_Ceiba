@@ -184,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				04A9A0542549F81800412D6D /* Main.storyboard */,
+				04A9A0A2254B378D00412D6D /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,7 +264,6 @@
 			isa = PBXGroup;
 			children = (
 				04A9A09A254B0D8D00412D6D /* UserCell.swift */,
-				04A9A09B254B0D8D00412D6D /* UserCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -272,9 +272,17 @@
 			isa = PBXGroup;
 			children = (
 				04A9A09E254B0DB000412D6D /* PostCell.swift */,
-				04A9A09F254B0DB000412D6D /* PostCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		04A9A0A2254B378D00412D6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04A9A09B254B0D8D00412D6D /* UserCell.xib */,
+				04A9A09F254B0DB000412D6D /* PostCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3B5098A92CEB4412B38418E9 /* Frameworks */ = {
