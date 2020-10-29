@@ -25,6 +25,7 @@ struct UserManager {
                 if let users = self.parseJSON(result) {
                     print(users)
                     self.delegate?.didUpdateTableUsers(users: users)
+                    print(users)
                 }
                 break
             case .failure:

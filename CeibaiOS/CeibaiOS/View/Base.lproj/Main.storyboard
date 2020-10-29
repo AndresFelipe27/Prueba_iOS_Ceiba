@@ -15,27 +15,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-Bm-UuJ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-Bm-UuJ">
+                                <rect key="frame" x="0.0" y="101" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="T7f-4h-2k5"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NF2-21-Q08">
-                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NF2-21-Q08">
+                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="NbY-yv-VQ2"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="W51-q1-LGu"/>
-                                </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="38R-e5-dyW">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.21757650379999999" green="0.42098271850000002" blue="0.20309662819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="38R-e5-dyW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5cb-cO-EBB"/>
                             <constraint firstItem="NF2-21-Q08" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Oqh-fU-tUK"/>
                             <constraint firstItem="vOq-Bm-UuJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RVa-UV-EcD"/>
-                            <constraint firstItem="vOq-Bm-UuJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TNO-lI-eqp"/>
+                            <constraint firstItem="vOq-Bm-UuJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="TNO-lI-eqp"/>
+                            <constraint firstItem="38R-e5-dyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UBU-em-jwM"/>
                             <constraint firstItem="vOq-Bm-UuJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZcQ-Hd-GU5"/>
                             <constraint firstItem="NF2-21-Q08" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aec-N2-w9j"/>
                             <constraint firstItem="NF2-21-Q08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ppz-28-Gow"/>
@@ -45,6 +51,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Users" id="zGF-GB-ysV"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="38R-e5-dyW" id="qMV-Ue-Vjn"/>
+                        <outlet property="tableUsers" destination="NF2-21-Q08" id="23S-TM-96r"/>
                         <segue destination="29D-FB-4TN" kind="show" identifier="segueDetailUser" id="A8q-cV-NkC"/>
                     </connections>
                 </viewController>
