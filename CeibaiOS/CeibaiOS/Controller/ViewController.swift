@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var userManager = UserManager()
+    var postManager = PostManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        userManager.getUsersFromApi()
+        postManager.getPostByUserIdFromApi(userId: 1)
     }
 
 

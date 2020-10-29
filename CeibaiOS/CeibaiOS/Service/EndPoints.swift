@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum userEndPoints: String {
+enum UserEndPoints: String {
     case getUsers = "/users"
 }
 
-enum postEndPoints: String {
+enum PostEndPoints: String {
     case getPosts = "/posts"
     case getPostsByUserId = "/posts?userId="
 }
