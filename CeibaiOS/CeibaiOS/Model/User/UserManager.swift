@@ -7,16 +7,19 @@
 //
 
 import Foundation
+import RealmSwift
 
 protocol UserManagerDelegate {
     func didUpdateTableUsers(users: [User])
     func didFailWithError(error: Error)
 }
 
-struct UserManager {
+class UserManager {
     
     var delegate: UserManagerDelegate?
     let baseService = BaseService()
+    let realm = try! Realm()
+    var listUsers = [User]()
     
     func getUsersFromApi() {
         baseService.sendRequest(endPoint: UserEndPoints.getUsers.rawValue) { (response) in
@@ -25,7 +28,8 @@ struct UserManager {
                 if let users = self.parseJSON(result) {
                     print(users)
                     self.delegate?.didUpdateTableUsers(users: users)
-                    print(users)
+                    print(Realm.Configuration.defaultConfiguration.fileURL)
+                    //self.save(users: users)
                 }
                 break
             case .failure:
@@ -47,6 +51,22 @@ struct UserManager {
             delegate?.didFailWithError(error: error)
             return nil
         }
+    }
+    
+    //Mark: - Data Manipulation Methods
+    func save(users: [User]) {
+        do {
+            try realm.write {
+                realm.add(users)
+                print("Saved users")
+            }
+        } catch {
+            print("Error saving users \(error)")
+        }
+    }
+    
+    func loadUsers() {
+        //self.listUsers = realm.objects(User.self)
     }
     
     

@@ -7,6 +7,7 @@ target 'CeibaiOS' do
 
   # Pods for CeibaiOS
   pod 'Alamofire', '~> 5.2'
+  pod 'RealmSwift'
 
   target 'CeibaiOSTests' do
     inherit! :search_paths

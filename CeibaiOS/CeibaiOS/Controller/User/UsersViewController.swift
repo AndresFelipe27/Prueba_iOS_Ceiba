@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class UsersViewController: UIViewController {
+    
+    let realm = try! Realm()
     
     @IBOutlet weak var tableUsers: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -147,16 +150,19 @@ extension UsersViewController: UISearchBarDelegate {
             isSearching = false
             view.endEditing(true)
             self.removeLabelListEmpty()
+            self.tableUsers.separatorStyle = .singleLine
             tableUsers.reloadData()
         }else {
             isSearching = true
             filteredData = listUsers.filter({
-                ($0.name).range(of: searchBar.text!, options: .caseInsensitive) != nil
+                ($0.name)?.range(of: searchBar.text!, options: .caseInsensitive) != nil
             })
             //Put label List is empty if
             if filteredData.count == 0 {
+                self.tableUsers.separatorStyle = .none
                 self.addLabelListEmpty()
             }else{
+                self.tableUsers.separatorStyle = .singleLine
                 self.removeLabelListEmpty()
             }
             tableUsers.reloadData()

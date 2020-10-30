@@ -7,13 +7,18 @@
 //
 
 import Foundation
+import RealmSwift
 
 //MARK: UserEntity
-class User: Decodable {
-    let id: Int
-    let name: String
-    let phone: String
-    let email: String
+class User: Object, Decodable {
+    @objc dynamic var id: Int = 0
+    @objc dynamic var name: String?
+    @objc dynamic var phone: String?
+    @objc dynamic var email: String?
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
     
     enum CodingKeys: CodingKey {
         case id
@@ -22,13 +27,15 @@ class User: Decodable {
         case email
     }
     
-    required init(from decoder: Decoder) throws {
+    public required convenience init(from decoder: Decoder) throws {
+        self.init()
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
         self.id = try container.decode(Int.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
         self.phone = try container.decode(String.self, forKey: .phone)
         self.email = try container.decode(String.self, forKey: .email)
-        
     }
+    
+    
+    
 }
