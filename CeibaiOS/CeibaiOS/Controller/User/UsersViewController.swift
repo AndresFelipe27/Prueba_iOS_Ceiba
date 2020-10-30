@@ -30,7 +30,6 @@ class UsersViewController: UIViewController {
         setUpTableView()
         setUpSearchBar()
         userManager.getUsersFromApi()
-        //postManager.getPostByUserIdFromApi(userId: 1)
     }
     
     func setUpTableView() {
@@ -44,6 +43,7 @@ class UsersViewController: UIViewController {
         searchBar.returnKeyType = UIReturnKeyType.search
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         setUpBackItemNavigation()
         
