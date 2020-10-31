@@ -28,8 +28,7 @@ class UserManager {
                 if let users = self.parseJSON(result) {
                     print(users)
                     self.delegate?.didUpdateTableUsers(users: users)
-                    print(Realm.Configuration.defaultConfiguration.fileURL)
-                    //self.save(users: users)
+                    self.save(users: users)
                 }
                 break
             case .failure:
@@ -65,11 +64,31 @@ class UserManager {
         }
     }
     
-    func loadUsers() {
-        //self.listUsers = realm.objects(User.self)
+    func loadUsers() -> [User] {
+        let usersDB = realm.objects(User.self).toArray()
+        return usersDB
     }
     
+    func validateIfUsersAreStored() {
+        //print(Realm.Configuration.defaultConfiguration.fileURL)
+        let usersDB = loadUsers()
+        if usersDB.count > 0 {
+            self.listUsers = usersDB
+            self.delegate?.didUpdateTableUsers(users: self.listUsers)
+            print("UsersBD")
+            print(self.listUsers)
+        }else {
+            getUsersFromApi()
+            print("UsersApi")
+        }
+    }
     
-    
-    
+}
+
+extension Results {
+   func toArray() -> [Element] {
+     return compactMap {
+       $0
+     }
+   }
 }

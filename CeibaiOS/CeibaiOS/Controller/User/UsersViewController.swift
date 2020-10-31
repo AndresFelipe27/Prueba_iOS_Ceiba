@@ -32,7 +32,7 @@ class UsersViewController: UIViewController {
         hideKeyboardWhenTappedAround()
         setUpTableView()
         setUpSearchBar()
-        userManager.getUsersFromApi()
+        userManager.validateIfUsersAreStored()
     }
     
     func setUpTableView() {
